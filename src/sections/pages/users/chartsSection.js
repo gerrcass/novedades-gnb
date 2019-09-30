@@ -23,7 +23,7 @@ export default class ChartsSection extends PureComponent {
                             20.5%
                         </Badge>
                     )}>
-                    <h1 className="react-rainbow-admin-users_card-title">Total users</h1>
+                    <h1 className="react-rainbow-admin-users_card-title">Total usuarios</h1>
                     <div className="react-rainbow-admin-users_chart">
                         <Chart
                             labels={chartsData.totalUsers.labels}
@@ -43,7 +43,7 @@ export default class ChartsSection extends PureComponent {
                             20.5%
                         </Badge>
                     )}>
-                    <h1 className="react-rainbow-admin-users_card-title">Active users</h1>
+                    <h1 className="react-rainbow-admin-users_card-title">Usuarios activos</h1>
                     <div className="react-rainbow-admin-users_chart">
                         <Chart
                             labels={chartsData.activeUsers.labels}

@@ -153,9 +153,9 @@ export default class ContentPage extends PureComponent {
                             fill />
                     </ChartCard>
                     <ChartCard
-                        title="Color use in Design"
-                        subtitle="Total Shipments"
-                        chartTitle="Polar Area Charts"
+                        title="Ilustración Ejemplo"
+                        subtitle="Total XYZ"
+                        chartTitle="GRAFICA AREA"
                         chartType="polarArea"
                         chartLabels={polarAreaCharts.labels}
                         chartLegendPosition="right">
@@ -167,10 +167,10 @@ export default class ContentPage extends PureComponent {
                 </section>
                 <section className="react-rainbow-admin-charts_section rainbow-p-top_large rainbow-align-content_space-between">
                     <ChartCard
-                        title="Use in Mobile"
-                        subtitle="Total Shipments"
-                        chartTitle="Pie Charts"
-                        chartLabels={pieCharts.labels}
+                        title="Ilustración Ejemplo"
+                        subtitle="Total XYZ"
+                        chartTitle="GRAFICA DE INCENDIOS"
+                        chartLabels={['DOMESTICOS','INDUSTRIALES','FORESTALES']}
                         chartType="pie"
                         chartLegendPosition="right">
                         <Dataset
@@ -180,10 +180,10 @@ export default class ContentPage extends PureComponent {
                             backgroundColor={['#ffcc00', '#1ad1a3', '#fe4849', '#ff6837']} />
                     </ChartCard>
                     <ChartCard
-                        title="Color use in Design"
-                        subtitle="Total Shipments"
-                        chartTitle="Doughnut Charts"
-                        chartLabels={doughnutCharts.labels}
+                        title="Ilustración Ejemplo"
+                        subtitle="Total XYZ"
+                        chartTitle="GRAFICA GMAVV"
+                        chartLabels={['ROBOS','INCAUTACIONES','DETENCIONES','HOMICIDIOS']}
                         chartType="doughnut"
                         chartLegendPosition="right">
                         <Dataset

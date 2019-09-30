@@ -4,23 +4,22 @@ import { Card } from 'react-rainbow-components';
 import {
     CalendarIcon,
     FollowerIcon,
-    OrderIcon,
+    BellIcon,
     UsersIcon,
     TimelineIcon,
     GalleryIcon,
-    PricingIcon,
+    PuzzleIcon
 } from '../../components/icons';
 import PageHeader from '../../components/PageHeader';
 import './styles.css';
 
 const pages = [
-    { name: 'Orders', icon: <OrderIcon />, href: '/pages/orders' },
-    { name: 'Users', icon: <UsersIcon />, href: '/pages/users' },
-    { name: 'Followers', icon: <FollowerIcon />, href: '/pages/followers' },
-    { name: 'Timeline', icon: <TimelineIcon />, href: '/comingSoon' },
-    { name: 'Gallery', icon: <GalleryIcon />, href: '/comingSoon' },
-    { name: 'Calendar', icon: <CalendarIcon />, href: '/comingSoon' },
-    { name: 'Pricing', icon: <PricingIcon />, href: '/comingSoon' },
+    { name: 'Visualizaciones', icon: <GalleryIcon />, href: '/pages/orders' },
+    { name: 'Usuarios', icon: <UsersIcon />, href: '/pages/users' },
+    { name: 'Conexiones', icon: <PuzzleIcon style={{height:'60px',width:'60px'}} />, href: '/pages/followers' },
+    { name: 'Linea de Tiempo', icon: <TimelineIcon />, href: '/comingSoon' },
+    { name: 'Calendario', icon: <CalendarIcon />, href: '/comingSoon' },
+    { name: 'Notificaciones', icon: <BellIcon style={{height:'60px',width:'60px'}} />, href: '/comingSoon' },
 ];
 
 function Cards() {
@@ -42,8 +41,8 @@ export default function Pages() {
     return (
         <div className="react-rainbow-admin-pages_container">
             <PageHeader
-                title="Pages"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                title="REDIOR"
+                description="Panel de configuración y ajuste de características" />
             <div className="react-rainbow-admin-pages_body">
                 <Cards />
             </div>

@@ -13,9 +13,9 @@ export default function SelectedContact(props) {
 
     const statusText = () => {
         if (isOnline) {
-            return 'Active now';
+            return 'Activo';
         }
-        return 'Inactive';
+        return 'Inactivo';
     };
 
     return (

@@ -59,20 +59,20 @@ export default class UsersTabs extends Component {
                     className="react-rainbow-admin-users_tab-set"
                     activeTabName={activeTabName}>
                     <Tab
-                        label="ALL USERS"
+                        label="TODOS LOS USUARIOS"
                         name="allUsers" />
 
                     <Tab
-                        label="ACTIVE USERS"
+                        label="USUARIOS ACTIVOS"
                         name="activeUsers" />
                 </Tabset>
                 <div className="react-rainbow-admin-users_tab-content">
                     <Table data={this.getTableData()} keyField="id">
-                        <Column header="USER" field="user" component={UserCell} />
-                        <Column header="USER ID" field="user" component={UserIdCell} defaultWidth={300} />
+                        <Column header="USUARIO" field="user" component={UserCell} />
+                        <Column header="ID USUARIO" field="user" component={UserIdCell} defaultWidth={300} />
                         <Column header="EMAIL" field="email" />
-                        <Column header="PHONE NUMBER" field="phoneNumber" />
-                        <Column header="CURRENT STATUS" field="status" component={Status} />
+                        <Column header="NUMERO TELFONICO" field="phoneNumber" />
+                        <Column header="ESTATUS" field="status" component={Status} />
                     </Table>
                     <TablePagination
                         pages={this.getPages()}

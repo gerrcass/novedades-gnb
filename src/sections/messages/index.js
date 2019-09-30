@@ -16,66 +16,67 @@ import ChatMessages from './chatMessages';
 import SelectedContact from './selectedContact';
 import './styles.css';
 
+const mensaje = "El 01SEP19, se recibió información del CZGNB52, notificando comisión integrada por cuatro (4) efectivos de Tropa Profesional adscritos Desur-52, al mando del TTE Vivas Andrés, en labores de Patrullaje de Seguridad Ciudadana, en el sector El Viñedo, Parroquia San Cristóbal, Municipio Simón Bolívar, Estado Anzoátegui, efectuaron la recuperación de un (01) vehículo marca Kia, modelo Opirus, Placa XYZ-123, el cual había estaba reportado como robado."
 const contacts = [
     {
         name: 'Saray',
         lastSeenDate: '8:30 am',
-        lastMessage: 'A rainbow i a meteorological phenomenon that is A rainbow i a meteorological phenomenon that is something',
+        lastMessage: `${mensaje}`,
         photoUrl: '/assets/images/user2.jpg',
         isOnline: true,
     },
     {
         name: 'Leo',
         lastSeenDate: '5:30 pm',
-        lastMessage: 'A rainbow i a meteorological phenomenon that is something',
+        lastMessage: `${mensaje}`,
         photoUrl: '/assets/images/user1.jpg',
         isOnline: true,
     },
     {
         name: 'Rey',
         lastSeenDate: '10:15 pm',
-        lastMessage: 'A rainbow i a meteorological phenomenon that is something',
+        lastMessage: `${mensaje}`,
         photoUrl: '/assets/images/user3.jpg',
     },
     {
         name: 'Jose',
         lastSeenDate: '8:45 am',
-        lastMessage: 'A rainbow i a meteorological phenomenon that is something',
+        lastMessage: `${mensaje}`,
         isOnline: true,
     },
     {
         name: 'Juan',
         lastSeenDate: 'yesterday',
-        lastMessage: 'A rainbow i a meteorological phenomenon that is something',
+        lastMessage: `${mensaje}`,
     },
     {
         name: 'Tahimi',
         lastSeenDate: 'yesterday',
-        lastMessage: 'A rainbow i a meteorological phenomenon that is something',
+        lastMessage: `${mensaje}`,
     },
     {
         name: 'Pepe',
         lastSeenDate: 'yesterday',
-        lastMessage: 'A rainbow i a meteorological phenomenon that is something',
+        lastMessage: `${mensaje}`,
     },
 ];
 
 const messages = [
     {
         photoUrl: '/assets/images/user2.jpg',
-        text: 'I have a problem with a topup',
+        text: 'Terminado patrullaje en la zona. Cambio',
         sentDate: '1:06 PM',
     },
     {
         photoUrl: '/assets/images/user4.jpg',
-        text: 'Verify the account',
+        text: 'En cuenta',
         isUser: true,
         isChecked: true,
         sentDate: '1:07 PM',
     },
     {
         photoUrl: '/assets/images/user2.jpg',
-        text: 'Already all is ok, thanks',
+        text: '12 Abatidos, zona en control.',
         sentDate: '1:19 PM',
     },
     {
@@ -130,7 +131,7 @@ export default class Messages extends Component {
                         label="Find contact"
                         type="search"
                         hideLabel
-                        placeholder="Find contact"
+                        placeholder="Encontrar contacto"
                         value={searchTerm}
                         onChange={this.handleOnChange}
                         icon={<SearchIcon />} />
@@ -162,7 +163,7 @@ export default class Messages extends Component {
                             className="react-rainbow-admin-messages_input"
                             label="Say something"
                             hideLabel
-                            placeholder="Say something"
+                            placeholder="Comentar algo"
                             icon={<ArrowUp />}
                             iconPosition="right" />
                     </div>

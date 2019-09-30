@@ -25,8 +25,8 @@ class Users extends Component {
                     </Breadcrumbs>
                     <PageHeader
                         className="react-rainbow-admin-users_header"
-                        title="Users"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                        title="Usuarios"
+                        description="Usuarios del sistema" />
                 </div>
                 <ContentPage {...this.props} />
             </div>
