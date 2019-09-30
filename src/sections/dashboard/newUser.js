@@ -39,7 +39,7 @@ export default function NewUser(props) {
                 </div>
                 <div className="rainbow-flex rainbow-flex_column rainbow-justify_center rainbow-align_end">
                     <div className={getUserActiveClassName()} />
-                    <p className="rainbow-color_gray-3 rainbow-font-size-text_small">{date}</p>
+                    <p className="rainbow-color_gray-3 rainbow-font-size-text_small">{date === 'Now' ? 'Ahora' : date}</p>
                 </div>
             </div>
         </article>

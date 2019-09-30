@@ -30,22 +30,22 @@ export default class ContentPage extends PureComponent {
             <div>
                 <section className="react-rainbow-admin-charts_section rainbow-p-top_large">
                     <ChartCard
-                        title="Gran Misión A Toda Vida Venezuela"
-                        subtitle="Criminalidad y Seguridad Ciudadana"
-                        chartTitle="Abatidos Vs Detenidos"
-                        chartLabels={['Enero','Febrero','Marzo','Abril','Mayo','Junio']}
+                        title="Performance"
+                        subtitle="Total Shipments"
+                        chartTitle="Line chart"
+                        chartLabels={lineCharts.labels}
                         chartType="line"
                         maintainAspectRatio={false}
                         type="line"
                         className="react-rainbow-admin-charts_chart-card"
                         chartClassName="react-rainbow-admin-charts_chart">
                         <Dataset
-                            title="Abatidos"
+                            title="Red"
                             values={lineCharts.dataSet[0].values}
                             borderColor="#fe4849"
                             backgroundColor="#fe4849" />
                         <Dataset
-                            title="Detenidos"
+                            title="Blue"
                             values={lineCharts.dataSet[1].values}
                             borderColor="#01b6f5"
                             backgroundColor="#01b6f5" />
@@ -53,11 +53,11 @@ export default class ContentPage extends PureComponent {
                 </section>
                 <section className="react-rainbow-admin-charts_section rainbow-p-top_large rainbow-align-content_space-between">
                     <ChartCard
-                        title="Vehículos Solicitados"
-                        subtitle="Total / mes"
-                        chartTitle="Novedades Asociadas"
+                        title=" 763,215"
+                        subtitle="Total Shipments"
+                        chartTitle="Line chart"
                         icon={<BellIcon />}
-                        chartLabels={['Enero','Febrero','Marzo','Abril','Mayo','Junio']}
+                        chartLabels={lineCharts.labels}
                         chartType="line">
                         <Dataset
                             title="Yellow"
@@ -67,11 +67,11 @@ export default class ContentPage extends PureComponent {
                             type="line" />
                     </ChartCard>
                     <ChartCard
-                        title="Vehículos Recuperados"
-                        subtitle="Total / mes"
-                        chartTitle="Novedades Asociadas"
+                        title="$3,500"
+                        subtitle="Daily Sales"
+                        chartTitle="Area charts"
                         icon={<SalesIcon />}
-                        chartLabels={['Enero','Febrero','Marzo','Abril','Mayo','Junio']}
+                        chartLabels={areaCharts.labels}
                         chartType="line"
                         chartDisableCurves>
                         <Dataset
@@ -85,69 +85,69 @@ export default class ContentPage extends PureComponent {
                 </section>
                 <section className="react-rainbow-admin-charts_section rainbow-p-top_large rainbow-align-content_space-between">
                     <ChartCard
-                        title="Orden público"
-                        subtitle="Actividad pública y clima político"
-                        chartTitle="NOVEDADES ASOCIADAS"
+                        title="11K"
+                        subtitle="Completed Tasks"
+                        chartTitle="Vertical Bar Charts"
                         icon={<CompletedTasksIcon />}
-                        chartLabels={['Enero','Febrero','Marzo','Abril','Mayo','Junio']}
+                        chartLabels={barCharts.labels}
                         chartType="bar">
                         <Dataset
                             key="Red"
-                            title="Manifestaciones"
+                            title="Red"
                             values={barCharts.dataSet[0].values}
                             backgroundColor="#fe4849" />
                         <Dataset
                             key="Orange"
-                            title="Saqueos"
+                            title="Orange"
                             values={barCharts.dataSet[1].values}
                             backgroundColor="#ff6837" />
                         <Dataset
                             key="Yellow"
-                            title="Protestas Violentas"
+                            title="Yellow"
                             values={barCharts.dataSet[2].values}
                             backgroundColor="#ffcc00" />
                         <Dataset
                             key="Green"
-                            title="Solicitud de Apoyo"
+                            title="Green"
                             values={barCharts.dataSet[3].values}
                             backgroundColor="#1ad1a3" />
                     </ChartCard>
                     <ChartCard
-                        title="GMAS"
-                        subtitle="Apoyo Alimentos y Medicinas"
-                        chartTitle="NOVEDADES ASOCIADAS"
+                        title="12K"
+                        subtitle="Completed Tasks"
+                        chartTitle="Horizontal Bar Charts"
                         icon={<IncompletedTasksIcon />}
-                        chartLabels={['Enero','Febrero','Marzo','Abril','Mayo','Junio']}
+                        chartLabels={horizontalBarCharts.labels}
                         chartType="horizontalBar">
                         <Dataset
                             key="Red"
-                            title="Alimentos"
+                            title="Red"
                             values={horizontalBarCharts.dataSet[0].values}
                             backgroundColor="#fe4849" />
                         <Dataset
                             key="Green"
-                            title="Medicinas"
+                            title="Green"
                             values={horizontalBarCharts.dataSet[1].values}
                             backgroundColor="#1ad1a3" />
                     </ChartCard>
                 </section>
                 <section className="react-rainbow-admin-charts_section rainbow-p-top_large rainbow-align-content_space-between">
                     <ChartCard
-                        title="Novedades Ordinarias y Especiales"
-                        subtitle="Cantidades en perspectiva"
-                        chartTitle="NOVEDADES"
-                        chartLabels={['Enero','Febrero','Marzo','Abril','Mayo','Junio']}
+                        title="Daily Tasks"
+                        subtitle="Total Shipments"
+                        chartTitle="Radar Charts"
+                        chartLabels={radarCharts.labels}
                         chartType="radar"
                         chartLegendPosition="right">
                         <Dataset
                             key="Yellow"
-                            title="ROE"
+                            title="Yellow"
                             values={radarCharts.dataSet[0].values}
                             backgroundColor="rgba(255, 214, 51, 0.44)"
                             fill />
                         <Dataset
                             key="Blue"
-                            title="ROD"
+                            title="Blue"
                             values={radarCharts.dataSet[1].values}
                             backgroundColor="rgba(1,182,245,0.55)"
                             fill />

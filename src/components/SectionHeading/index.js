@@ -27,14 +27,17 @@ import {
 import Notification from './notification';
 import IconNotification from './iconNotification';
 import './styles.css';
+import logoimg from "../../images/gnb_logo.png"
+
 
 export default function SectionHeading({ onToogleSidebar }) {
     return (
         <header className="react-rainbow-admin_header rainbow-position_fixed rainbow-flex rainbow-align_center rainbow-p-horizontal_large rainbow-background-color_white">
-            <img src="/assets/images/rainbow-logo.svg" alt="rainbow logo" className="react-rainbow-admin_header-logo" />
+            {/* <img src="/assets/images/rainbow-logo.svg" alt="rainbow logo" className="react-rainbow-admin_header-logo" /> */}
+            <img src={logoimg} alt="rainbow logo" className="react-rainbow-admin_header-logo" />
             <Input
                 className="rainbow-m-left_xx-large react-rainbow-admin_header-search"
-                placeholder="search"
+                placeholder="buscar"
                 label="header search"
                 hideLabel
                 icon={<FontAwesomeIcon icon={faSearch} className="rainbow-color_gray-2" />} />
@@ -43,17 +46,17 @@ export default function SectionHeading({ onToogleSidebar }) {
                     <ButtonIcon icon={<FontAwesomeIcon icon={faRocket} />} variant="border-filled" disabled />
                     <ButtonIcon icon={<FontAwesomeIcon icon={faBullhorn} />} variant="border-filled" />
                     <ButtonMenu menuAlignment="right" menuSize="xx-small" icon={<FontAwesomeIcon icon={faAngleDown} />}>
-                        <MenuItem label="Admin-1" />
-                        <MenuItem label="Admin-2" />
-                        <MenuItem label="Admin-3" />
+                        <MenuItem label="ALM" />
+                        <MenuItem label="TCNEL" />
+                        <MenuItem label="MAY" />
                     </ButtonMenu>
                 </ButtonGroup>
-                <a
+                {/*<a
                     href="https://github.com/nexxtway/react-rainbow-admin"
                     target="_blank"
                     rel="noopener noreferrer">
                     <GithubIcon className="react-rainbow-admin_header-github-icon" />
-                </a>
+                </a>*/}
                 <ButtonMenu
                     className="rainbow-m-horizontal_medium react-rainbow-admin_header-button-notification"
                     menuAlignment="right"
@@ -63,11 +66,11 @@ export default function SectionHeading({ onToogleSidebar }) {
                     <MenuItem label="Notifications (2)" variant="header" />
                     <MenuItem
                         icon={
-                            <IconNotification icon={<ShoppingCartIcon className="react-rainbow-admin_header--notification-icon" />} />
+                            <IconNotification icon={<i class="fa fa-bell" style={{color:'#1DE9B6'}}></i>} />
                         }
                         label={(
                             <Notification
-                                title="Your order is placed" />
+                                title="Nuevas Novedades" />
                         )} />
                     <MenuItem
                         icon={
@@ -75,33 +78,33 @@ export default function SectionHeading({ onToogleSidebar }) {
                         }
                         label={(
                             <Notification
-                                title="New messages" />
+                                title="Nuevos Mensajes" />
                         )} />
                 </ButtonMenu>
                 <AvatarMenu
-                    src="/assets/images/user2.jpg"
-                    assistiveText="Tahimi Leon"
+                    src="/assets/images/avatar.jpg"
+                    assistiveText="Pedro Perez"
                     menuAlignment="right"
                     menuSize="small"
-                    title="Tahimi Leon">
+                    title="Pedro Perez">
                     <li className="rainbow-p-horizontal_small rainbow-align_center rainbow-flex">
                         <Avatar
-                            src="/assets/images/user2.jpg"
-                            assistiveText="Tahimi Leon"
-                            title="Tahimi Leon"
+                            src="/assets/images/avatar.jpg"
+                            assistiveText="Pedro Perez"
+                            title="Pedro Perez"
                             size="medium" />
                         <div className="rainbow-m-left_x-small">
-                            <p className="rainbow-font-size-text_medium rainbow-color_dark-1">Tahimi</p>
-                            <p className="rainbow-font-size-text_small rainbow-color_gray-3">janedoe@gmail.com</p>
+                            <p className="rainbow-font-size-text_medium rainbow-color_dark-1">MG. Pedro Perez</p>
+                            <p className="rainbow-font-size-text_small rainbow-color_gray-3">pedroperez@guardia.mil.ve</p>
                         </div>
                     </li>
                     <MenuDivider variant="space" />
                     <MenuItem
-                        label="Edit Profile"
+                        label="Editar Perfil"
                         icon={<FontAwesomeIcon icon={faPencilAlt} />}
                         iconPosition="left" />
                     <MenuItem
-                        label="Logout"
+                        label="Cerrar"
                         icon={<FontAwesomeIcon icon={faPowerOff} />}
                         iconPosition="left" />
                 </AvatarMenu>

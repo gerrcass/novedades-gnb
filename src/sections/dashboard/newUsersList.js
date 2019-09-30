@@ -22,13 +22,14 @@ export default function NewUsersList({ newUsers }) {
                 avatarIcon={<PersonIcon />}
                 avatarSrc={avatar}
                 userName={userName}
-                city={city}
+                city={'Municipio Simón Bolívar, Puerto la Cruz'}
                 avatarTitle={avatarTitle}
                 date={date}
                 isActive={isActive}
                 hasDivider={hasDivider} />
         );
     });
+    
 }
 
 NewUsersList.propTypes = {

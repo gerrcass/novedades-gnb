@@ -36,6 +36,7 @@ export default function Routes() {
                 <Route path="/pages/orders" component={Orders} />
                 <Route path="/pages/followers" component={Followers} />
                 <Route path="/comingSoon" component={ComingSoon} />
+                <Route path="/novedades-gnb" component={Dashboard} />
             </Switch>
         </Router>
     );

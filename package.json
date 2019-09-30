@@ -1,7 +1,8 @@
 {
-  "name": "react-rainbow-admin",
+  "name": "novedades-redior",
   "version": "0.1.0",
-  "description": "React Rainbow Admin",
+  "description": "Sistema de Gestión de Novedades GNB REDIOR",
+  "homepage": "https://gerrcass.github.io/novedades-gnb",
   "keywords": [
     "react",
     "admin",
@@ -9,21 +10,23 @@
     "examples"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.4",
-    "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
-    "@fortawesome/free-regular-svg-icons": "^5.1.0-11",
-    "@fortawesome/free-solid-svg-icons": "^5.3.1",
-    "@fortawesome/react-fontawesome": "^0.1.2",
-    "history": "^4.7.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.5",
+    "@nivo/calendar": "^0.59.1",
+    "gh-pages": "^2.1.1",
+    "history": "^4.10.1",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
     "react-prismic-cms": "^0.3.1",
     "react-rainbow-components": "^1.4.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.2",
-    "redux": "^4.0.1",
-    "redux-form": "^8.1.0",
+    "redux": "^4.0.4",
+    "redux-form": "^8.2.6",
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
@@ -33,7 +36,8 @@
     "test:ci": "CI=true yarn test",
     "lint": "./node_modules/.bin/eslint src",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,13 +51,13 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "5.6.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb": "^17.1.1",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.1",
-    "firebase-tools": "^6.2.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "firebase-tools": "^6.12.0",
     "pre-push": "^0.1.1"
   },
   "pre-push": [

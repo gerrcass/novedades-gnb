@@ -19,6 +19,8 @@ import Tile from '../../components/Tile';
 import fetchDashboardData from '../../redux/actions/dashboard';
 import './styles.css';
 
+import gmvaa from '../../images/gmavv.jpg';
+
 function ContentPage(props) {
     const {
         totals: {
@@ -42,24 +44,23 @@ function ContentPage(props) {
         <div>
             <section className="react-rainbow-admin-dashboard_section rainbow-align-content_space-between rainbow-p-top_large">
                 <Tile
-                    title="Orders"
-                    label={orders}
-                    icon={<ShoppingCartIcon />} />
+                    title="Novedades"
+                    label={873}
+                    icon={<i class="fa fa-bell" style={{fontSize:'40px',color:'#1DE9B6'}}></i>} />
 
                 <Tile
-                    title="Users"
-                    label={users}
-                    icon={<UsersIcon className="react-rainbow-admin-dashboard_tile-icon" />} />
+                    title="GMAVV"
+                    label={126}
+                    icon={<img src={gmvaa} alt="GMAVV" style={{width:'40px'}}/>} />
+                <Tile
+                    title="Orden Público"
+                    label={67}
+                    icon={<i class="fa fa-bullhorn" style={{fontSize:'40px',color:'#F7076A'}}></i>} />
 
                 <Tile
-                    title="Followers"
-                    label={followers}
-                    icon={<LikeIcon />} />
-
-                <Tile
-                    title="Errors"
-                    label={errors}
-                    icon={<ErrorIcon />} />
+                    title="Fuerza de Choque"
+                    label={11}
+                    icon={<i class="fa fa-plug" style={{fontSize:'40px',color:'#FE4849'}}></i>} />
             </section>
 
             <ChartsSection
@@ -68,22 +69,22 @@ function ContentPage(props) {
                 totalUsers={totalUsers}
                 followersActive={followersActive} />
 
-            <section className="react-rainbow-admin-dashboard_section rainbow-align-content_space-between rainbow-p-top_large">
+            <section style={{alignItems:'flex-start'}} className="react-rainbow-admin-dashboard_section rainbow-align-content_space-between rainbow-p-top_large">
                 <ListCard
-                    title="Last Messages"
+                    title="Últimas novedades"
                     component={<LastMessagesList lastMessages={lastMessages} />}
                     footerLink={(
                         <Link className="react-rainbow-admin-dashboard_list-card--footer-link rainbow-color_brand" to="/messages">
-                            View all messages
+                            Ver todos los mensajes
                         </Link>
                     )} />
 
                 <ListCard
-                    title="New Users"
+                    title="Últimas incautaciones"
                     component={<NewUsersList newUsers={newUsers} />}
                     footerLink={(
                         <Link className="react-rainbow-admin-dashboard_list-card--footer-link rainbow-color_brand" to="/pages/users">
-                            View all users
+                            Ver todas las incautaciones
                         </Link>
                     )} />
             </section>
@@ -109,8 +110,8 @@ class Dashboard extends Component {
         return (
             <div className="react-rainbow-admin-dashboard_view-port">
                 <PageHeader
-                    title="Dashboard"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                    title="Tablero de Control"
+                    description="Sistema de Gestión de Novedades en tiempo real - REDIOR." />
                 <ContentPage {...this.props} />
             </div>
         );

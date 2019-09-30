@@ -21,8 +21,8 @@ class Charts extends Component {
         return (
             <div className="react-rainbow-admin-charts_container">
                 <PageHeader
-                    title="Visualizaciones"
-                    description="Tablero de Visualizaciones en Tiempo Real" />
+                    title="Charts"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. You can learn more about it here: https://www.chartjs.org" />
                 <ContentPage isLoading={isLoading} {...data} />
             </div>
         );

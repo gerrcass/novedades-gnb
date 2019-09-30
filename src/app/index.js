@@ -79,43 +79,43 @@ class App extends Component {
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<DashboardIcon />}
                             name="dashboard"
-                            label="Dashboard"
+                            label="Tablero"
                             onClick={() => navigate('/dashboard')} />
                         <SidebarItem
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<PagesIcon />}
                             name="pages"
-                            label="Pages"
+                            label="REDIOR"
                             onClick={() => navigate('/pages')} />
-                        <SidebarItem
+                        {/* <SidebarItem
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<ApplicationIcon />}
                             name="applications"
-                            label="Applications"
+                            label="CEOFAN"
                             onClick={() => navigate('/applications')} />
                         <SidebarItem
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<PuzzleIcon />}
                             name="components"
-                            label="Components"
-                            onClick={() => navigate('/components')} />
+                            label="ZODI"
+                            onClick={() => navigate('/components')} /> */}
                         <SidebarItem
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<MessageIcon />}
                             name="messages"
-                            label="Messages"
+                            label="Comunicaciones"
                             onClick={() => navigate('/messages')} />
-                        <SidebarItem
+                        {/* <SidebarItem
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<FormsIcon />}
                             name="forms"
-                            label="Forms"
-                            onClick={() => navigate('/forms')} />
+                            label="Datos"
+                            onClick={() => navigate('/forms')} /> */}
                         <SidebarItem
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<ChartsIcon />}
                             name="charts"
-                            label="Charts"
+                            label="Infografias"
                             onClick={() => navigate('/charts')} />
                     </Sidebar>
                     <RenderIf isTrue={!isSidebarHidden}>
