@@ -28,6 +28,7 @@ import Notification from './notification';
 import IconNotification from './iconNotification';
 import './styles.css';
 import logoimg from "../../images/gnb_logo.png"
+import avatarImage from "../../images/avatar.jpg"
 
 
 export default function SectionHeading({ onToogleSidebar }) {
@@ -82,14 +83,14 @@ export default function SectionHeading({ onToogleSidebar }) {
                         )} />
                 </ButtonMenu>
                 <AvatarMenu
-                    src="/assets/images/avatar.jpg"
+                    src={avatarImage}
                     assistiveText="Pedro Perez"
                     menuAlignment="right"
                     menuSize="small"
                     title="Pedro Perez">
                     <li className="rainbow-p-horizontal_small rainbow-align_center rainbow-flex">
                         <Avatar
-                            src="/assets/images/avatar.jpg"
+                            src={avatarImage}
                             assistiveText="Pedro Perez"
                             title="Pedro Perez"
                             size="medium" />

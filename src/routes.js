@@ -24,6 +24,8 @@ export default function Routes() {
         <Router history={history}>
             <Switch>
                 <Redirect from="/" exact to="/dashboard" />
+                <Redirect from="/novedades-gnb/" exact to="/dashboard" />
+                <Redirect from="/novedades-gnb" exact to="/dashboard" />
                 <Route path="/applications" component={Applications} />
                 <Route path="/charts" component={Charts} />
                 <Route path="/components" component={Components} />
@@ -36,7 +38,6 @@ export default function Routes() {
                 <Route path="/pages/orders" component={Orders} />
                 <Route path="/pages/followers" component={Followers} />
                 <Route path="/comingSoon" component={ComingSoon} />
-                <Route path="/novedades-gnb" component={Dashboard} />
             </Switch>
         </Router>
     );
