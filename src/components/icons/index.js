@@ -45,7 +45,7 @@ import Microphone from './Microphone';
 import PhotoCamera from './PhotoCamera';
 import Picture from './Picture';
 import BarsIcon from './Bars';
-import LogoGnb from './logoGnb'
+import LogoGnb from './LogoGnb'
 
 export {
     ApplicationIcon,

@@ -115,7 +115,7 @@ class App extends Component {
                             className="react-rainbow-admin-app_sidebar-item"
                             icon={<ChartsIcon />}
                             name="charts"
-                            label="Infografias"
+                            label="Visualizaciones"
                             onClick={() => navigate('/charts')} />
                     </Sidebar>
                     <RenderIf isTrue={!isSidebarHidden}>
