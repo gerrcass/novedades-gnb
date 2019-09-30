@@ -23,6 +23,7 @@ import {
     MessageIcon,
     BarsIcon,
     GithubIcon,
+    LogoGnb
 } from '../icons';
 import Notification from './notification';
 import IconNotification from './iconNotification';
@@ -35,7 +36,7 @@ export default function SectionHeading({ onToogleSidebar }) {
     return (
         <header className="react-rainbow-admin_header rainbow-position_fixed rainbow-flex rainbow-align_center rainbow-p-horizontal_large rainbow-background-color_white">
             {/* <img src="/assets/images/rainbow-logo.svg" alt="rainbow logo" className="react-rainbow-admin_header-logo" /> */}
-            <img src="https://gerrcass.github.io/novedades-gnb/assets/images/gnb_logo.png" alt="rainbow logo" className="react-rainbow-admin_header-logo" />
+            <LogoGnb style={{width:'auto'}} className="react-rainbow-admin_header-logo" />
             <Input
                 className="rainbow-m-left_xx-large react-rainbow-admin_header-search"
                 placeholder="buscar"
