@@ -40,10 +40,6 @@ self.__precacheManifest = [
     "url": "/novedades-gnb/static/media/Lato-Hairline.a0126eff.woff"
   },
   {
-    "revision": "d1b4f2b60c46b18d634524c24a20aa7e",
-    "url": "/novedades-gnb/static/media/Lato-HairlineItalic.d1b4f2b6.woff2"
-  },
-  {
     "revision": "51e3f9585f4f66bee1ad9c5b488b46ca",
     "url": "/novedades-gnb/static/media/Lato-HairlineItalic.51e3f958.woff"
   },
@@ -52,12 +48,16 @@ self.__precacheManifest = [
     "url": "/novedades-gnb/static/media/Lato-Light.96b78ec9.woff2"
   },
   {
-    "revision": "a0d2a3a8df176d2319d2fb8e009c8280",
-    "url": "/novedades-gnb/static/media/Lato-LightItalic.a0d2a3a8.woff2"
+    "revision": "d1b4f2b60c46b18d634524c24a20aa7e",
+    "url": "/novedades-gnb/static/media/Lato-HairlineItalic.d1b4f2b6.woff2"
   },
   {
     "revision": "e4669f8c91a258d8de12601f86154cce",
     "url": "/novedades-gnb/static/media/Lato-LightItalic.e4669f8c.woff"
+  },
+  {
+    "revision": "a0d2a3a8df176d2319d2fb8e009c8280",
+    "url": "/novedades-gnb/static/media/Lato-LightItalic.a0d2a3a8.woff2"
   },
   {
     "revision": "3679ad95a1ac1277cd25d379a55712b5",
@@ -68,32 +68,32 @@ self.__precacheManifest = [
     "url": "/novedades-gnb/static/media/Lato-Black.21c4d25c.woff"
   },
   {
-    "revision": "3a9f8a8c8cc8facb4e0a83a0dea7329b",
-    "url": "/novedades-gnb/static/media/Lato-BlackItalic.3a9f8a8c.woff2"
-  },
-  {
     "revision": "eb70fa8a58ab4cf49c42f84f23afcc8f",
     "url": "/novedades-gnb/static/media/Lato-BlackItalic.eb70fa8a.woff"
+  },
+  {
+    "revision": "3a9f8a8c8cc8facb4e0a83a0dea7329b",
+    "url": "/novedades-gnb/static/media/Lato-BlackItalic.3a9f8a8c.woff2"
   },
   {
     "revision": "5dfc529dfa53af18cf8db0ac408b3c19",
     "url": "/novedades-gnb/static/media/Lato-Bold.5dfc529d.woff"
   },
   {
-    "revision": "104d6a885096c90bfb643259a643d829",
-    "url": "/novedades-gnb/static/media/Lato-BoldItalic.104d6a88.woff2"
-  },
-  {
     "revision": "5a5f072318a76b880d5076eeaf1e7417",
     "url": "/novedades-gnb/static/media/Lato-BoldItalic.5a5f0723.woff"
   },
   {
-    "revision": "b441b7902bd4c1e6092e35ed1d287e56",
-    "url": "/novedades-gnb/static/media/Lato-Italic.b441b790.woff2"
+    "revision": "104d6a885096c90bfb643259a643d829",
+    "url": "/novedades-gnb/static/media/Lato-BoldItalic.104d6a88.woff2"
   },
   {
     "revision": "3ecfbc65f009551edc7e58dd35a8a2ec",
     "url": "/novedades-gnb/static/media/Lato-Italic.3ecfbc65.woff"
+  },
+  {
+    "revision": "b441b7902bd4c1e6092e35ed1d287e56",
+    "url": "/novedades-gnb/static/media/Lato-Italic.b441b790.woff2"
   },
   {
     "revision": "9d57e0c919026e4d61c7f7087e43a00f",
@@ -136,10 +136,6 @@ self.__precacheManifest = [
     "url": "/novedades-gnb/static/media/Lato-Black.f21ec1ef.eot"
   },
   {
-    "revision": "a47d8f9cf715b23d1ed1da4054b56f5f",
-    "url": "/novedades-gnb/static/media/Lato-Bold.a47d8f9c.eot"
-  },
-  {
     "revision": "44dfe8cc676882243911a3197a50169e",
     "url": "/novedades-gnb/static/media/Lato-Bold.44dfe8cc.ttf"
   },
@@ -148,32 +144,36 @@ self.__precacheManifest = [
     "url": "/novedades-gnb/static/media/Lato-BoldItalic.15518f50.eot"
   },
   {
-    "revision": "cc02ace78557f1308c9382f9ce81b80d",
-    "url": "/novedades-gnb/static/media/Lato-Hairline.cc02ace7.eot"
-  },
-  {
-    "revision": "db15ac7981b2d2897d1a3c22892b5a51",
-    "url": "/novedades-gnb/static/media/Lato-Hairline.db15ac79.ttf"
+    "revision": "a47d8f9cf715b23d1ed1da4054b56f5f",
+    "url": "/novedades-gnb/static/media/Lato-Bold.a47d8f9c.eot"
   },
   {
     "revision": "1ba4767ee37aab7e8d34fc339c3538cc",
     "url": "/novedades-gnb/static/media/Lato-BoldItalic.1ba4767e.ttf"
   },
   {
-    "revision": "af5a576da8a3d664ac832355065cb8bd",
-    "url": "/novedades-gnb/static/media/Lato-Italic.af5a576d.eot"
+    "revision": "cc02ace78557f1308c9382f9ce81b80d",
+    "url": "/novedades-gnb/static/media/Lato-Hairline.cc02ace7.eot"
   },
   {
     "revision": "f014a7e840bcd8fcdbaaba729f2847d9",
     "url": "/novedades-gnb/static/media/Lato-Light.f014a7e8.eot"
   },
   {
-    "revision": "5b761f2d1e4259ea6ac7ab3ebf7f3c49",
-    "url": "/novedades-gnb/static/media/Lato-Light.5b761f2d.ttf"
-  },
-  {
     "revision": "56c4cb26fd6a48b9c0ebcc07b376ee38",
     "url": "/novedades-gnb/static/media/Lato-Italic.56c4cb26.ttf"
+  },
+  {
+    "revision": "af5a576da8a3d664ac832355065cb8bd",
+    "url": "/novedades-gnb/static/media/Lato-Italic.af5a576d.eot"
+  },
+  {
+    "revision": "db15ac7981b2d2897d1a3c22892b5a51",
+    "url": "/novedades-gnb/static/media/Lato-Hairline.db15ac79.ttf"
+  },
+  {
+    "revision": "5b761f2d1e4259ea6ac7ab3ebf7f3c49",
+    "url": "/novedades-gnb/static/media/Lato-Light.5b761f2d.ttf"
   },
   {
     "revision": "39a3905085ad34aa621eaccdd6b70440",
@@ -192,20 +192,12 @@ self.__precacheManifest = [
     "url": "/novedades-gnb/static/media/Lato-HairlineItalic.8f30b438.svg"
   },
   {
-    "revision": "e5d453c9f92af2d3ad810b9507a213c0",
-    "url": "/novedades-gnb/static/media/Lato-Hairline.e5d453c9.svg"
-  },
-  {
-    "revision": "75da51e5d9b7014a8456bc62e7e544e9",
-    "url": "/novedades-gnb/static/media/Lato-LightItalic.75da51e5.svg"
-  },
-  {
     "revision": "4a4cd2e7626ff79b2719e3221d7f2f46",
     "url": "/novedades-gnb/static/media/Lato-BoldItalic.4a4cd2e7.svg"
   },
   {
-    "revision": "b13b187d608ae75fa657f27698a77054",
-    "url": "/novedades-gnb/static/media/Lato-Light.b13b187d.svg"
+    "revision": "75da51e5d9b7014a8456bc62e7e544e9",
+    "url": "/novedades-gnb/static/media/Lato-LightItalic.75da51e5.svg"
   },
   {
     "revision": "1ffe506636db6daac79dafb1100efe8d",
@@ -214,6 +206,14 @@ self.__precacheManifest = [
   {
     "revision": "e9d329fb99c7e3244dc344c9e0e422de",
     "url": "/novedades-gnb/static/media/Lato-Regular.e9d329fb.svg"
+  },
+  {
+    "revision": "e5d453c9f92af2d3ad810b9507a213c0",
+    "url": "/novedades-gnb/static/media/Lato-Hairline.e5d453c9.svg"
+  },
+  {
+    "revision": "b13b187d608ae75fa657f27698a77054",
+    "url": "/novedades-gnb/static/media/Lato-Light.b13b187d.svg"
   },
   {
     "revision": "cb6fe25ec47ffbaef682b71b1b133b8a",
